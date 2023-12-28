@@ -5,5 +5,9 @@ int main()
 {
 
 	cout << "Hello world";
+<<<<<<< HEAD
         cout << "I'm Arthur";
+=======
+        cout << "Life is awesome!";
+>>>>>>> main
 }
