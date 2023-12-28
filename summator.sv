@@ -10,12 +10,13 @@ reg [2:0] step;
 
 initial //Начальный блок
 begin //Инициализация массива чисел
-numbers[0] = 3; 
-numbers[1] = 3;
-numbers[2] = 0;
-numbers[3] = 4;
-numbers[4] = 2;
-numbers[5] = 0;
+numbers[0] = 1; 
+numbers[1] = 5;
+numbers[2] = 9;
+numbers[3] = 2;
+numbers[4] = 6;
+numbers[5] = 7;
+numbers[6] = 1;
 
 sum = 0; //Инициализация выходной суммы
 temp_sum = numbers[0];
@@ -23,7 +24,7 @@ step = 0;
 
 //$display("Step %d: Sum = %d", step, temp_sum); //Отображение информации о текущем шаге и временной сумме
 
-while (step < 5) //Цикл для суммирования чисел
+while (step < 6) //Цикл для суммирования чисел
 begin 
 step = step + 1; //Увеличение значения регистра шага на единицу
 temp_sum = temp_sum + numbers[step]; //Добавление следующего числа из массива к временной сумме
